@@ -1,3 +1,3 @@
-autoMiner.loadInterval = setInterval(function() {
+setInterval(function() {
   applyMining();
 }, 100);
