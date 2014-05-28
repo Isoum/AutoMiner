@@ -2,12 +2,12 @@
                                      Various Functions
 =======================================================================================*/
 function setOverrides() {
-    AutoMiner.varHasTunnels = JSON.parse(varHasTunnels);
-    AutoMiner.varTntAmount = JSON.parse(varTntAmount);
-    AutoMiner.varGunPowerAmount = JSON.parse(varGunPowerAmount);
-    AutoMiner.varCopperWireAmount = JSON.parse(varCopperWireAmount);
-    AutoMiner.varCopperAmount = JSON.parse(varCopperAmount);
-    AutoMiner.varBronzeBarAmount = JSON.parse(varBronzeBarAmount);
+    AutoMiner.varHasTunnels = readCookie(varHasTunnels);
+    AutoMiner.varTntAmount = readCookie(varTntAmount);
+    AutoMiner.varGunPowerAmount = readCookie(varGunPowerAmount);
+    AutoMiner.varCopperWireAmount = readCookie(varCopperWireAmount);
+    AutoMiner.varCopperAmount = readCookie(varCopperAmount);
+    AutoMiner.varBronzeBarAmount = readCookie(varBronzeBarAmount);
 }
 
 function checkTunnels() {
