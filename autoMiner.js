@@ -5,12 +5,13 @@ function setOverrides() {
     var varTntAmount = document.getElementById("tntAmount").innerHTML;
     varTntAmount = Number(varTntAmount.replace(/[^\d\.\-\ ]/g, ''));
     if (varTntAmount == 322) {
-        document.getElementById("clicktomine").innerHTML = "tnt:" + varTntAmount;
+        document.getElementById("clicktomine").innerHTML = "tnt: " + varTntAmount;
     }
     
     var varGunPowerAmount = document.getElementById("gunPowerAmount");
-    document.getElementById("clicktomine").innerHTML = "stringgun" + varGunPowerAmount;
-    varGunPowerAmount = Number(varGunPowerAmount.replace(/[^\d\.\-\ ]/g, ''));
+    varGunPowerAmount = varGunPowerAmount.replace(/[^\d\.\-\ ]/g, '');
+    document.getElementById("clicktomine").innerHTML = "stringgun " + varGunPowerAmount;
+    varGunPowerAmount = varGunPowerAmount.replace(/[^\d\.\-\ ]/g, '');
     document.getElementById("clicktomine").innerHTML = "gun:" + varGunPowerAmount;
     
     var varCopperWireAmount = document.getElementById("copperWireAmount");
