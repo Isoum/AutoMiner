@@ -12,8 +12,10 @@ function setOverrides() {
 }
 
 function checkTunnels() {
-        if (varTntAmount == 500) {
-            blowTunnels();
+        if (varTntAmount == 322) {
+            document.getElementById("clicktomine").innerHTML = "it works" + varTntAmount;
+
+            //blowTunnels();
         } else if (varGunPowerAmount >= 100 && varCopperWireAmount >= 100) {
             craftTNT();
         } else if (varCopperWireAmount < 100 && varCopperAmount >= 2500 && varBronzeBarAmount >= 10) {
