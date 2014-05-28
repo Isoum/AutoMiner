@@ -1,6 +1,6 @@
 setInterval(function() {
   sellAllOres();
-}, 10000);
+}, 300000);
 
 setInterval(function() {
   applyMining();
