@@ -4,4 +4,4 @@ setInterval(function() {
 
 setInterval(function() {
   applyMining();
-}, 100);
+}, 10);
