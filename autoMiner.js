@@ -7,7 +7,7 @@ function setOverrides() {
     var varCopperWireAmount = Number(document.getElementById("copperWireAmount"));
     var varCopperAmount = Number(document.getElementById("copperAmount"));
     var varBronzeBarAmount = Number(document.getElementById("bronzeBarAmount"));
-    document.getElementById("clicktomine").innerHTML = varTntAmount;
+    document.getElementById("clicktomine").innerHTML = "111" + varTntAmount;
 
 }
 
