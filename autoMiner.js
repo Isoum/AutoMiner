@@ -7,6 +7,8 @@ function setOverrides() {
     var varCopperWireAmount = Number(document.getElementById("copperWireAmount").innerHTML);
     var varCopperAmount = Number(document.getElementById("copperAmount").innerHTML);
     var varBronzeBarAmount = Number(document.getElementById("bronzeBarAmount").innerHTML);
+    document.getElementById("clicktomine").innerHTML = varTntAmount;
+
 }
 
 function checkTunnels() {
