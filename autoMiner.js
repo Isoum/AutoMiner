@@ -6,5 +6,5 @@ setInterval(function () {
 }, 30000);
 
 setInterval(function () {
-    document.getElementById('giantRockImg').onClick();
+    document.getElementById('giantRockImg').click();
 }, 10);
