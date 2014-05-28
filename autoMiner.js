@@ -2,7 +2,7 @@
                                      Various Functions
 =======================================================================================*/
 function setOverrides() {
-    var varTntAmount = Number(document.getElementById("tntAmount"));
+    var varTntAmount = document.getElementById("tntAmount");
     var varGunPowerAmount = Number(document.getElementById("gunPowerAmount"));
     var varCopperWireAmount = Number(document.getElementById("copperWireAmount"));
     var varCopperAmount = Number(document.getElementById("copperAmount"));
