@@ -4,9 +4,12 @@ Various Functions
 function setOverrides() {
     var varTntAmount = document.getElementById("tntAmount").innerHTML;
     varTntAmount = Number(varTntAmount.replace(/[^\d\.\-\ ]/g, ''));
-    document.getElementById("clicktomine").innerHTML = "tnt:" + varTntAmount;
+    if (varTntAmount == 322) {
+        document.getElementById("clicktomine").innerHTML = "tnt:" + varTntAmount;
+    }
     
     var varGunPowerAmount = document.getElementById("gunPowerAmount");
+    document.getElementById("clicktomine").innerHTML = "stringgun" + varGunPowerAmount;
     varGunPowerAmount = Number(varGunPowerAmount.replace(/[^\d\.\-\ ]/g, ''));
     document.getElementById("clicktomine").innerHTML = "gun:" + varGunPowerAmount;
     
