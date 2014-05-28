@@ -6,7 +6,8 @@ function setOverrides() {
     varTntAmount = Number(varTntAmount.replace(/[^\d\.\-\ ]/g, ''));
     
     var varGunPowerAmount = document.getElementById("gunPowerAmount");
-    varGunPowerAmount = Number(varGunPowerAmount.replace(/[^\d\.\-\ ]/g, ''));
+    varGunPowerAmount = varGunPowerAmount.replace(/[^\d\.\-\ ]/g, '');
+    varGunPowerAmount = Number(varGunPowerAmount);
     document.getElementById("clicktomine").innerHTML = "gun:" + varGunPowerAmount;
     
     var varCopperWireAmount = document.getElementById("copperWireAmount");
