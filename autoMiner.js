@@ -1,8 +1,8 @@
 /*=====================================================================================
                                      Various Functions
 =======================================================================================*/
-checkTunnels = function () {
-    if (varHasTunnels != 1) {
+function checkTunnels() {
+    if (varHasTunnels == 0) {
         if (varTntAmount == 500) {
             blowTunnels();
         } else if (varGunPowerAmount >= 100 && varCopperWireAmount >= 100) {
