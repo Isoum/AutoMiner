@@ -3,17 +3,17 @@
 =======================================================================================*/
 function setOverrides() {
     var varTntAmount = document.getElementById("tntAmount").innerHTML;
+    document.getElementById("clicktomine").innerHTML = "String:" + varTntAmount;
+    varTntAmount = Number(varTntAmount);
     var varGunPowerAmount = Number(document.getElementById("gunPowerAmount"));
     var varCopperWireAmount = Number(document.getElementById("copperWireAmount"));
     var varCopperAmount = Number(document.getElementById("copperAmount"));
     var varBronzeBarAmount = Number(document.getElementById("bronzeBarAmount"));
-    document.getElementById("clicktomine").innerHTML = "111" + varTntAmount;
-
 }
 
 function checkTunnels() {
-        if (varTntAmount == "322") {
-            document.getElementById("clicktomine").innerHTML = "it works" + varTntAmount;
+        if (varTntAmount == 322) {
+            document.getElementById("clicktomine").innerHTML = "Number:" + varTntAmount;
 
             //blowTunnels();
         } else if (varGunPowerAmount >= 100 && varCopperWireAmount >= 100) {
