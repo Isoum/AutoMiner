@@ -3,12 +3,13 @@ Various Functions
 =======================================================================================*/
 function setOverrides() {
     var varTntAmount = document.getElementById("tntAmount").innerHTML;
-    varTntAmount = Number(varTntAmount);
+    varTntAmount = varTntAmount.replace(/[^\d\.\-\ ]/g, '');
     document.getElementById("clicktomine").innerHTML = "tnt:" + varTntAmount;
-    var varGunPowerAmount = document.getElementById("gunPowerAmount");
-    varGunPowerAmount = Number(varGunPowerAmount);
     
+    var varGunPowerAmount = document.getElementById("gunPowerAmount");
+    varGunPowerAmount = varGunPowerAmount.replace(/[^\d\.\-\ ]/g, '');
     document.getElementById("clicktomine").innerHTML = "gun:" + varGunPowerAmount;
+    
     var varCopperWireAmount = document.getElementById("copperWireAmount");
     varCopperWireAmount = Number(varCopperWireAmount);
     var varCopperAmount = document.getElementById("copperAmount");
