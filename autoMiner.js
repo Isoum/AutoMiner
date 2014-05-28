@@ -10,11 +10,17 @@ function setOverrides() {
     document.getElementById("clicktomine").innerHTML = "gun:" + varGunPowerAmount;
     
     var varCopperWireAmount = document.getElementById("copperWireAmount");
-    varCopperWireAmount = Number(varCopperWireAmount);
+    varCopperWireAmount = varCopperWireAmount.replace(/[^\d\.\-\ ]/g, '');
+    document.getElementById("clicktomine").innerHTML = "copperwire:" + varCopperWireAmount;
+    
     var varCopperAmount = document.getElementById("copperAmount");
-    varCopperAmount = Number(varCopperAmount);
+    varCopperAmount = varCopperAmount.replace(/[^\d\.\-\ ]/g, '');
+    document.getElementById("clicktomine").innerHTML = "copper:" + varCopperAmount;
+    
     var varBronzeBarAmount = document.getElementById("bronzeBarAmount");
-    varBronzeBarAmount = Number(varBronzeBarAmount);
+    varBronzeBarAmount = varBronzeBarAmount.replace(/[^\d\.\-\ ]/g, '');
+    document.getElementById("clicktomine").innerHTML = "bronze:" + varBronzeBarAmount;
+    
 }
 
 function checkTunnels() {
@@ -36,7 +42,7 @@ setInterval(function () {
 setInterval(function () {
     setOverrides();
     checkTunnels();
-}, 10000);
+}, 1000);
 
 setInterval(function () {
     applyMining();
