@@ -11,7 +11,8 @@ function setOverrides() {
 }
 
 function checkTunnels() {
-    if (AutoMiner.varHasTunnels === 0) {
+    if (varHasTunnels === 0) {
+      document.getElementById("hide-manuel-mining").innerHTML = "000000000";
         if (AutoMiner.varTntAmount == 500) {
             blowTunnels();
         } else if (AutoMiner.varGunPowerAmount >= 100 && AutoMiner.arCopperWireAmount >= 100) {
