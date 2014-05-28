@@ -2,16 +2,17 @@
                                      Various Functions
 =======================================================================================*/
 function setOverrides() {
-    AutoMiner.varHasTunnels = getValue("varHasTunnels", data);
-    AutoMiner.varTntAmount = getValue("varTntAmount", data);
-    AutoMiner.varGunPowerAmount = getValue("varGunPowerAmount", data);
-    AutoMiner.varCopperWireAmount = getValue("varCopperWireAmount", data);
-    AutoMiner.varCopperAmount = getValue("varCopperAmount", data);
-    AutoMiner.varBronzeBarAmount = getValue("varBronzeBarAmount", data);
+    AutoMiner.varHasTunnels = document.getElementById("varHasTunnels")
+    AutoMiner.varTntAmount = document.getElementById("varTntAmount")
+    AutoMiner.varGunPowerAmount = document.getElementById("varGunPowerAmount")
+    AutoMiner.varCopperWireAmount = document.getElementById("varCopperWireAmount")
+    AutoMiner.varCopperAmount = document.getElementById("varCopperAmount")
+    AutoMiner.varBronzeBarAmount = document.getElementById("varBronzeBarAmount")
 }
 
 function checkTunnels() {
     if (AutoMiner.varHasTunnels === 0) {
+      document.getElementById("clicktomine").innerHTML = "00000000.";
         if (AutoMiner.varTntAmount == 500) {
             blowTunnels();
         } else if (AutoMiner.varGunPowerAmount >= 100 && AutoMiner.varCopperWireAmount >= 100) {
