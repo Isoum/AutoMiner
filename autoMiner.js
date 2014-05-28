@@ -12,7 +12,7 @@ function setOverrides() {
 }
 
 function checkTunnels() {
-        if (varTntAmount == 322) {
+        if (varTntAmount == "322") {
             document.getElementById("clicktomine").innerHTML = "it works" + varTntAmount;
 
             //blowTunnels();
