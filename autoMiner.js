@@ -1,7 +1,7 @@
 /*=====================================================================================
                                      Various Functions
 =======================================================================================*/
-function setOverRides() {
+function setOverrides() {
     AutoMiner.varHasTunnels = JSON.parse(varHasTunnels);
     AutoMiner.varTntAmount = JSON.parse(varTntAmount);
     AutoMiner.varGunPowerAmount = JSON.parse(varGunPowerAmount);
