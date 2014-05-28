@@ -1,27 +1,33 @@
 /*=====================================================================================
-                                     Various Functions
+Various Functions
 =======================================================================================*/
 function setOverrides() {
-    var varTntAmount = getOreValue('varTntAmount');
-          document.getElementById("clicktomine").innerHTML = "tntAmount" + varTntAmount;
-    var varGunPowerAmount = getOreValue('varGunPowerAmount');
-    var varCopperWireAmount = getOreValue('varCopperWireAmount');
-    var varCopperAmount = getOreValue('varCopperAmount');
-    var varBronzeBarAmount = getOreValue('varBronzeBarAmount');
+    var varTntAmount = document.getElementById("tntAmount").innerHTML;
+    varTntAmount = Number(varTntAmount);
+    document.getElementById("clicktomine").innerHTML = "tnt:" + varTntAmount;
+    var varGunPowerAmount = document.getElementById("gunPowerAmount");
+    varGunPowerAmount = Number(varGunPowerAmount);
+    
+    document.getElementById("clicktomine").innerHTML = "gun:" + varGunPowerAmount;
+    var varCopperWireAmount = document.getElementById("copperWireAmount");
+    varCopperWireAmount = Number(varCopperWireAmount);
+    var varCopperAmount = document.getElementById("copperAmount");
+    varCopperAmount = Number(varCopperAmount);
+    var varBronzeBarAmount = document.getElementById("bronzeBarAmount");
+    varBronzeBarAmount = Number(varBronzeBarAmount);
 }
 
 function checkTunnels() {
         if (varTntAmount == 500) {
             blowTunnels();
         } else if (varGunPowerAmount >= 100 && varCopperWireAmount >= 100) {
-          document.getElementById("clicktomine").innerHTML = "craftTNT();";
             craftTNT();
         } else if (varCopperWireAmount < 100 && varCopperAmount >= 2500 && varBronzeBarAmount >= 10) {
             craftBronzeWire();
         }
  }
 /*=====================================================================================
-                                 SetInterval Functions
+SetInterval Functions
 =======================================================================================*/
 setInterval(function () {
     sellAllOres();
