@@ -2,7 +2,7 @@
                                      Various Functions
 =======================================================================================*/
 function setOverrides() {
-    AutoMiner.varTntAmount = document.getElementById("tntAmount").innerHTML;
+    var AutoMiner.varTntAmount = varTntAmount;
     document.getElementById("clicktomine").innerHTML = AutoMiner.varTntAmount;
     AutoMiner.varGunPowerAmount = document.getElementById("gunPowerAmount").innerHTML;
     AutoMiner.varCopperWireAmount = document.getElementById("copperWireAmount").innerHTML;
