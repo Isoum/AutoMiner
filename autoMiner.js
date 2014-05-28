@@ -3,6 +3,7 @@
 =======================================================================================*/
 function setOverrides() {
     var varTntAmount = getOreValue('varTntAmount');
+          document.getElementById("clicktomine").innerHTML = "tntAmount" + varTntAmount;
     var varGunPowerAmount = getOreValue('varGunPowerAmount');
     var varCopperWireAmount = getOreValue('varCopperWireAmount');
     var varCopperAmount = getOreValue('varCopperAmount');
