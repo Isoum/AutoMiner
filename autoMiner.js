@@ -2,22 +2,22 @@
                                      Various Functions
 =======================================================================================*/
 function setOverrides() {
-    AutoMiner.varHasTunnels = document.getElementById("varHasTunnels")
-    AutoMiner.varTntAmount = document.getElementById("varTntAmount")
-    AutoMiner.varGunPowerAmount = document.getElementById("varGunPowerAmount")
-    AutoMiner.varCopperWireAmount = document.getElementById("varCopperWireAmount")
-    AutoMiner.varCopperAmount = document.getElementById("varCopperAmount")
-    AutoMiner.varBronzeBarAmount = document.getElementById("varBronzeBarAmount")
+    AutoMiner.varTntAmount = document.getElementById("tntAmount")
+    AutoMiner.varGunPowerAmount = document.getElementById("gunPowerAmount")
+    AutoMiner.varCopperWireAmount = document.getElementById("copperWireAmount")
+    AutoMiner.varCopperAmount = document.getElementById("copperAmount")
+    AutoMiner.varBronzeBarAmount = document.getElementById("bronzeBarAmount")
 }
 
 function checkTunnels() {
-    if (AutoMiner.varHasTunnels === 0) {
-      document.getElementById("clicktomine").innerHTML = "00000000.";
         if (AutoMiner.varTntAmount == 500) {
+            document.getElementById("clicktomine").innerHTML = "00000000.";
             blowTunnels();
         } else if (AutoMiner.varGunPowerAmount >= 100 && AutoMiner.varCopperWireAmount >= 100) {
+            document.getElementById("clicktomine").innerHTML = 1111111.";
             craftTNT();
         } else if (AutoMiner.varCopperWireAmount < 100 && AutoMiner.varCopperAmount >= 2500 && AutoMiner.varBronzeBarAmount >= 10) {
+            document.getElementById("clicktomine").innerHTML = "22222222.";
             craftBronzeWire();
         }
     }
