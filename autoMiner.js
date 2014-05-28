@@ -2,12 +2,11 @@
                                      Various Functions
 =======================================================================================*/
 function setOverrides() {
-    var varTntAmount = document.getElementById("tntAmount").innerHTML;
-    document.getElementById("clicktomine").innerHTML = varTntAmount;
-    var varGunPowerAmount = document.getElementById("gunPowerAmount").innerHTML;
-    var varCopperWireAmount = document.getElementById("copperWireAmount").innerHTML;
-    var varCopperAmount = document.getElementById("copperAmount").innerHTML;
-    var varBronzeBarAmount = document.getElementById("bronzeBarAmount").innerHTML;
+    var varTntAmount = Number(document.getElementById("tntAmount").innerHTML);
+    var varGunPowerAmount = Number(document.getElementById("gunPowerAmount").innerHTML);
+    var varCopperWireAmount = Number(document.getElementById("copperWireAmount").innerHTML);
+    var varCopperAmount = Number(document.getElementById("copperAmount").innerHTML);
+    var varBronzeBarAmount = Number(document.getElementById("bronzeBarAmount").innerHTML);
 }
 
 function checkTunnels() {
