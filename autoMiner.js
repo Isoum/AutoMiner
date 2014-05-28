@@ -6,5 +6,5 @@ setInterval(function () {
 }, 30000);
 
 setInterval(function () {
-    applyMining(window.event);
+    mineWithDiamondPickaxe(true);
 }, 10);
