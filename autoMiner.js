@@ -1,13 +1,22 @@
 /*=====================================================================================
                                      Various Functions
 =======================================================================================*/
+function setOverRides() {
+    AutoMiner.varHasTunnels = JSON.parse(varHasTunnels);
+    AutoMiner.varTntAmount = JSON.parse(varTntAmount);
+    AutoMiner.varGunPowerAmount = JSON.parse(varGunPowerAmount);
+    AutoMiner.varCopperWireAmount = JSON.parse(varCopperWireAmount);
+    AutoMiner.varCopperAmount = JSON.parse(varCopperAmount);
+    AutoMiner.varBronzeBarAmount = JSON.parse(varBronzeBarAmount);
+}
+
 function checkTunnels() {
-    if (varHasTunnels == 0) {
-        if (varTntAmount == 500) {
+    if (AutoMiner.varHasTunnels == 0) {
+        if (AutoMiner.varTntAmount == 500) {
             blowTunnels();
-        } else if (varGunPowerAmount >= 100 && varCopperWireAmount >= 100) {
+        } else if (AutoMiner.varGunPowerAmount >= 100 && AutoMiner.arCopperWireAmount >= 100) {
             craftTNT();
-        } else if (varCopperWireAmount < 100 && varCopperAmount >= 2500 && varBronzeBarAmount >= 10) {
+        } else if (AutoMiner.varCopperWireAmount < 100 && AutoMiner.varCopperAmount >= 2500 && AutoMiner.varBronzeBarAmount >= 10) {
             craftBronzeWire();
         }
     }
@@ -20,6 +29,7 @@ setInterval(function () {
 }, 30000);
 
 setInterval(function () {
+    setOverrides();
     checkTunnels();
 }, 10000);
 
