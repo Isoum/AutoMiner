@@ -3,19 +3,20 @@
 =======================================================================================*/
 function setOverrides() {
     var varTntAmount = document.getElementById("tntAmount").innerHTML;
-    document.getElementById("clicktomine").innerHTML = "String:" + varTntAmount;
     varTntAmount = Number(varTntAmount);
-    var varGunPowerAmount = Number(document.getElementById("gunPowerAmount"));
-    var varCopperWireAmount = Number(document.getElementById("copperWireAmount"));
-    var varCopperAmount = Number(document.getElementById("copperAmount"));
-    var varBronzeBarAmount = Number(document.getElementById("bronzeBarAmount"));
+    var varGunPowerAmount = document.getElementById("gunPowerAmount");
+    varGunPowerAmount = Number(varGunPowerAmount);
+    var varCopperWireAmount = document.getElementById("copperWireAmount");
+    varCopperWireAmount = Number(varCopperWireAmount);
+    var varCopperAmount = document.getElementById("copperAmount");
+    varCopperAmount = Number(varCopperAmount);
+    var varBronzeBarAmount = document.getElementById("bronzeBarAmount");
+    varBronzeBarAmount = Number(varBronzeBarAmount);
 }
 
 function checkTunnels() {
-        if (varTntAmount == 322) {
-            document.getElementById("clicktomine").innerHTML = "Number:" + varTntAmount;
-
-            //blowTunnels();
+        if (varTntAmount == 500) {
+            blowTunnels();
         } else if (varGunPowerAmount >= 100 && varCopperWireAmount >= 100) {
             craftTNT();
         } else if (varCopperWireAmount < 100 && varCopperAmount >= 2500 && varBronzeBarAmount >= 10) {
