@@ -6,5 +6,5 @@ setInterval(function () {
 }, 30000);
 
 setInterval(function () {
-    applyMining(event);
+    addMineClick();
 }, 10);
