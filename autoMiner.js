@@ -1,19 +1,10 @@
 /*=====================================================================================
                                      Various Functions
 =======================================================================================*/
-function setOverrides() {
-    AutoMiner.varHasTunnels = readCookie(varHasTunnels);
-    AutoMiner.varTntAmount = readCookie(varTntAmount);
-    AutoMiner.varGunPowerAmount = readCookie(varGunPowerAmount);
-    AutoMiner.varCopperWireAmount = readCookie(varCopperWireAmount);
-    AutoMiner.varCopperAmount = readCookie(varCopperAmount);
-    AutoMiner.varBronzeBarAmount = readCookie(varBronzeBarAmount);
-}
-
 function checkTunnels() {
-      document.getElementById("hide-manuel-mining").innerHTML = "000000000";
+    document.getElementById("clicktomine").innerHTML = "000000000";
     if (varHasTunnels === 0) {
-      document.getElementById("hide-manuel-mining").innerHTML = "1111111111";
+      document.getElementById("clicktomine").innerHTML = "1111111111";
         if (AutoMiner.varTntAmount == 500) {
             blowTunnels();
         } else if (AutoMiner.varGunPowerAmount >= 100 && AutoMiner.arCopperWireAmount >= 100) {
@@ -31,7 +22,6 @@ setInterval(function () {
 }, 30000);
 
 setInterval(function () {
-    setOverrides();
     checkTunnels();
 }, 10000);
 
