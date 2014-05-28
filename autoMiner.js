@@ -2,11 +2,11 @@
                                      Various Functions
 =======================================================================================*/
 function setOverrides() {
-    AutoMiner.varTntAmount = document.getElementById("tntAmount");
-    AutoMiner.varGunPowerAmount = document.getElementById("gunPowerAmount");
-    AutoMiner.varCopperWireAmount = document.getElementById("copperWireAmount");
-    AutoMiner.varCopperAmount = document.getElementById("copperAmount");
-    AutoMiner.varBronzeBarAmount = document.getElementById("bronzeBarAmount");
+    AutoMiner.varTntAmount = document.getElementById("tntAmount").value;
+    AutoMiner.varGunPowerAmount = document.getElementById("gunPowerAmount").value;
+    AutoMiner.varCopperWireAmount = document.getElementById("copperWireAmount").value;
+    AutoMiner.varCopperAmount = document.getElementById("copperAmount").value;
+    AutoMiner.varBronzeBarAmount = document.getElementById("bronzeBarAmount").value;
 }
 
 function checkTunnels() {
