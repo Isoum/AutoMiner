@@ -4,7 +4,6 @@ Various Functions
 function setOverrides() {
     var varTntAmount = document.getElementById("tntAmount").innerHTML;
     varTntAmount = varTntAmount.replace(/[^\d\.\-\ ]/g, '');
-    document.getElementById("clicktomine").innerHTML = "tnt:" + varTntAmount;
     
     var varGunPowerAmount = document.getElementById("gunPowerAmount");
     varGunPowerAmount = varGunPowerAmount.replace(/[^\d\.\-\ ]/g, '');
