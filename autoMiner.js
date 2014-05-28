@@ -3,22 +3,23 @@ Various Functions
 =======================================================================================*/
 function setOverrides() {
     var varTntAmount = document.getElementById("tntAmount").innerHTML;
-    varTntAmount = varTntAmount.replace(/[^\d\.\-\ ]/g, '');
+    varTntAmount = Number(varTntAmount.replace(/[^\d\.\-\ ]/g, ''));
+    document.getElementById("clicktomine").innerHTML = "tnt:" + varTntAmount;
     
     var varGunPowerAmount = document.getElementById("gunPowerAmount");
-    varGunPowerAmount = varGunPowerAmount.replace(/[^\d\.\-\ ]/g, '');
+    varGunPowerAmount = Number(varGunPowerAmount.replace(/[^\d\.\-\ ]/g, ''));
     document.getElementById("clicktomine").innerHTML = "gun:" + varGunPowerAmount;
     
     var varCopperWireAmount = document.getElementById("copperWireAmount");
-    varCopperWireAmount = varCopperWireAmount.replace(/[^\d\.\-\ ]/g, '');
+    varCopperWireAmount = Number(varCopperWireAmount.replace(/[^\d\.\-\ ]/g, ''));
     document.getElementById("clicktomine").innerHTML = "copperwire:" + varCopperWireAmount;
     
     var varCopperAmount = document.getElementById("copperAmount");
-    varCopperAmount = varCopperAmount.replace(/[^\d\.\-\ ]/g, '');
+    varCopperAmount = Number(varCopperAmount.replace(/[^\d\.\-\ ]/g, ''));
     document.getElementById("clicktomine").innerHTML = "copper:" + varCopperAmount;
     
     var varBronzeBarAmount = document.getElementById("bronzeBarAmount");
-    varBronzeBarAmount = varBronzeBarAmount.replace(/[^\d\.\-\ ]/g, '');
+    varBronzeBarAmount = Number(varBronzeBarAmount.replace(/[^\d\.\-\ ]/g, ''));
     document.getElementById("clicktomine").innerHTML = "bronze:" + varBronzeBarAmount;
     
 }
