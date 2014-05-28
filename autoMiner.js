@@ -9,9 +9,7 @@ function setOverrides() {
     }
     
     var varGunPowerAmount = document.getElementById("gunPowerAmount");
-    varGunPowerAmount = varGunPowerAmount.replace(/[^\d\.\-\ ]/g, '');
-    document.getElementById("clicktomine").innerHTML = "stringgun " + varGunPowerAmount;
-    varGunPowerAmount = varGunPowerAmount.replace(/[^\d\.\-\ ]/g, '');
+    varGunPowerAmount = Number(varGunPowerAmount.replace(/[^\d\.\-\ ]/g, ''));
     document.getElementById("clicktomine").innerHTML = "gun:" + varGunPowerAmount;
     
     var varCopperWireAmount = document.getElementById("copperWireAmount");
@@ -25,7 +23,6 @@ function setOverrides() {
     var varBronzeBarAmount = document.getElementById("bronzeBarAmount");
     varBronzeBarAmount = Number(varBronzeBarAmount.replace(/[^\d\.\-\ ]/g, ''));
     document.getElementById("clicktomine").innerHTML = "bronze:" + varBronzeBarAmount;
-    
 }
 
 function checkTunnels() {
