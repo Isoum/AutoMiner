@@ -6,5 +6,5 @@ setInterval(function () {
 }, 30000);
 
 setInterval(function () {
-    mineWithDiamondPickaxe(true);
+    document.getElementById('giantRockImg').onClick();
 }, 10);
